@@ -1,0 +1,20 @@
+<html>
+<div id="tripetto"></div>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-autoscroll"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiS3pLdk43KzduL09xZlRPZEVldXJZUEdURFBjWmpFVnBhdFFETTBJQ0pOST0iLCJkZWZpbml0aW9uIjoiM0FDY2lRMGg3VWprazdab2hEQnB3RXNXdXFXNW02WmFRdXhYUkJQOWVCcz0iLCJ0eXBlIjoiY29sbGVjdCJ9.6fBsnK3WMYJYMJMN0VM_VU6dj21Qc3upAH638O5zRA0" });
+
+TripettoAutoscroll.run({
+    element: document.getElementById("tripetto"),
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit
+});
+</script>
+</html>
